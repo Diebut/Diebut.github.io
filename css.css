@@ -191,7 +191,7 @@ footer {
 @media (max-width: 768px) {
     header {
         flex-direction: column;
-        align-items: flex-start;
+        align-items: center;
     }
 
     header h1 {
@@ -220,7 +220,7 @@ footer {
     }
 
     .item-2 {
-        padding: 15px;
+        padding: 30px;
     }
 
     .item-3 {
