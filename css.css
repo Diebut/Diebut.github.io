@@ -51,6 +51,15 @@ header nav ul li a:hover {
     text-decoration: underline;
 }
 
+.menu-toggle {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 20px;
+    cursor: pointer;
+    display: none;
+}
+
 .content {
     width: 100%;
     flex: 1;
@@ -87,7 +96,7 @@ header nav ul li a:hover {
 
 p {
     padding: 5px;
-    margin: 15px 0; /* agrega */
+    margin: 15px 0;
 }
 
 .container2 {
@@ -105,7 +114,7 @@ p {
     padding: 15px;
     border-radius: 15px;
     background: #e8eff5;
-    margin: 15px 0; /* agrega */
+    margin: 15px 0;
 }
 
 .item-1 {
@@ -172,6 +181,7 @@ footer {
         width: 40%;
         margin-right: 2%;
     }
+
     .container2 {
         width: 58%;
         display: grid;
@@ -187,12 +197,28 @@ footer {
     button {
         width: 48%;
     }
+
+    .menu-toggle {
+        display: none;
+    }
+
+    header nav {
+        display: block;
+        margin-right: 20px;
+    }
+
+    header nav ul {
+        display: flex;
+        gap: 20px;
+    }
 }
 
 @media (max-width: 768px) {
     header {
-        flex-direction: column;
+        flex-direction: row;
         align-items: center;
+        justify-content: space-between;
+        padding: 10px 20px;
     }
 
     header h1 {
@@ -200,9 +226,27 @@ footer {
         margin: 10px 0;
     }
 
+    .menu-toggle {
+        display: block;
+        font-size: 24px;
+    }
+
+    header nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+        background-color: #333;
+    }
+
+    header nav.active {
+        display: flex;
+    }
+
     header nav ul {
-        justify-content: center;
-        flex-wrap: wrap;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
     }
 
     .content {
@@ -212,15 +256,20 @@ footer {
     .container, .container2 {
         width: 100%;
     }
-    /* agrega*/
+
     .img img {
         width: 70%;
-        padding: 10px; 
-        border-radius: 25px; 
+        padding: 10px;
+        border-radius: 25px;
     }
 }
 
 @media (max-width: 480px) {
+    header {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
     header nav ul {
         flex-direction: column;
         gap: 10px;
@@ -237,8 +286,8 @@ footer {
     button {
         font-size: 14px;
     }
-    /* agrega */
+
     .img img {
-        width: 70%; 
+        width: 70%;
     }
 }
