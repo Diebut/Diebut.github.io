@@ -87,6 +87,7 @@ header nav ul li a:hover {
 
 p {
     padding: 5px;
+    margin: 15px 0; /* agrega */
 }
 
 .container2 {
@@ -104,6 +105,7 @@ p {
     padding: 15px;
     border-radius: 15px;
     background: #e8eff5;
+    margin: 15px 0; /* agrega */
 }
 
 .item-1 {
@@ -170,7 +172,6 @@ footer {
         width: 40%;
         margin-right: 2%;
     }
-
     .container2 {
         width: 58%;
         display: grid;
@@ -211,6 +212,12 @@ footer {
     .container, .container2 {
         width: 100%;
     }
+    /* agrega*/
+    .img img {
+        width: 70%;
+        padding: 10px; 
+        border-radius: 25px; 
+    }
 }
 
 @media (max-width: 480px) {
@@ -229,5 +236,9 @@ footer {
 
     button {
         font-size: 14px;
+    }
+    /* agrega */
+    .img img {
+        width: 70%; 
     }
 }
