@@ -100,6 +100,11 @@ footer {
   padding: 10px 0;
   flex-shrink: 0;
 }
+.whatsapp-icon {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+}
 
 @media (max-width: 768px) {
    /*  header h1{
