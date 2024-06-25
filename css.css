@@ -50,6 +50,10 @@ header nav ul li a {
 header nav ul li a:hover {
   text-decoration: underline;
 }
+/* texto tamaño */
+nav ul li a{
+  font-size: 25px;
+}
 
 .menu-toggle {
   background: none;
@@ -109,6 +113,9 @@ p {
   padding: 10px;
   background-color: rgb(201, 223, 240);
 }
+h2{
+  padding: 10px;
+}
 
 .item-1,
 .item-2,
@@ -147,7 +154,24 @@ button {
   border-radius: 10px;
   background-color: #0f2741;
   color: white;
-  font-size: 16px;
+  font-size: 25px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+/* edita ambos botones */
+aside button {
+  width: 85%;
+  height: 50%; /* a */
+  padding: 20px;
+  margin: 30px;/* a */
+  border: none;
+  border-radius: 10px;
+  background-color: #0f2741;
+  color: white;
+  font-size: 20px;
   cursor: pointer;
   display: flex;
   align-items: center;
@@ -155,9 +179,9 @@ button {
   gap: 5px;
 }
 
-button i {
+/* button i {
   margin-right: 5px;
-}
+} */
 
 button:hover {
   background-color: #5e6266;
@@ -232,11 +256,13 @@ footer {
   header h1 {
     text-align: center;
     margin: 10px 0;
+    font-size: 25px;
   }
 
   .menu-toggle {
     display: block;
-    font-size: 24px;
+    font-size: 20px;
+    width: 10%;
   }
 
   header nav {
@@ -267,7 +293,7 @@ footer {
   }
 
   .img img {
-    width: 70%;
+    width: 90%;
     padding: 10px;
     border-radius: 25px;
   }
@@ -293,11 +319,18 @@ footer {
   }
 
   button {
-    font-size: 14px;
+    font-size: 15px;
+  }
+  /* agrego */
+  aside button{
+    justify-content: center;
+    padding: 25px;
+    margin: 10px;
+    font-size: medium;
   }
 
   .img img {
-    width: 70%;
+    width: 85%;
   }
 }
 /* ----agrega loader span---- */
