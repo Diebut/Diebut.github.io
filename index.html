@@ -1,37 +1,67 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MI pagina web IPHONE!</title>
+    <!-- agrego etiquetas meta para el Seo -->
+    <meta name="description" content="Diplomatura Full Stack, especializado en [programación]">
+    <meta name="keywords" content="Blog web Iphone, desarrollador web, [programador]">
+    <meta name="author" content="Guevara Diego">
+
+    <title>Menú Lateral con CSS</title>
     <link rel="stylesheet" href="normalize.css">
-    <link rel="stylesheet" href="css.css"/>
+    <link rel="stylesheet" href="./Css/css.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
-    <header>
-        <button class="menu-toggle" aria-label="Toggle menu"><i class="fas fa-bars"></i></button>
-        <span class="loader"></span>
-        <h1>Mi BLOG web IPHONE!</h1>
-        <nav>
-            <ul>
-                <li><a href="#nuevo-iphone">Nuevo iPhone</a></li>
-                <li><a href="#noticias">Noticias</a></li>
-                <li><a href="#descripcion">Descripción</a></li>
-                <li><a href="#comentarios">Comentarios</a></li>
-            </ul>
-        </nav>
+    <header class="header">
+        <div class="container">
+            <span class="loader"></span>
+            <div class="btn-menu">
+                <label for="btn-menu"><i class="fas fa-bars"></i></label>
+            </div>
+            <div class="logo">
+                <h1>Mi BLOG iPhone!</h1>
+            </div>
+            <nav class="menu">
+                <ul>
+                    <li><a href="#nuevo-iphone">Nuevo iPhone</a></li>
+                    <li><a href="#noticias">Noticias</a></li>
+                    <li><a href="#descripcion">Descripción</a></li>
+                    <li><a href="#comentarios">Comentarios</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
+
+    <div class="capa"></div>
+
+    <input type="checkbox" id="btn-menu">
+    <aside class="container-menu">
+        <div class="cont-menu">
+            <nav>
+                <ul>
+                    <li><a href="#">Perfil <i class="fas fa-user"></i></a></li>
+                    <li><a href="#">Portafolio <i class="fas fa-briefcase"></i></a></li>
+                    <li><a href="#">Servicios <i class="fas fa-concierge-bell"></i></a></li>
+                    <li><a href="#">Archivos <i class="fas fa-folder"></i></a></li>
+                    <li><a href="#">Instagram <i class="fab fa-instagram"></i></a></li>
+                    <li><a href="#">Configuración <i class="fas fa-cog"></i></a></li>
+                </ul>
+            </nav>
+            <label for="btn-menu"><i class="fas fa-times"></i></label>
+        </div>
+    </aside>
+
     <main class="content">
-        <section id="nuevo-iphone" class="container">
+        <section id="nuevo-iphone" class="container3">
             <div class="img">
                 <h2>Lanzamiento iPhone</h2>
-                <img src="./img/iphone.jpg" alt="Foto del nuevo iPhone">
+                <img src="./Assets/iphone.jpg" alt="Foto del nuevo iPhone">
                 <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Nulla, ratione perspiciatis. Non, dicta dolorum sunt dignissimos rem error similique velit.</p>
                 
             </div>
         </section>
-        <section id="noticias" class="container2">
+        <section id="noticias" class="container4">
             <article class="item-1">
                 <h2>NOTICIAS: CELULARES EN EL MERCADO</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Corrupti sapiente laborum praesentium minus ex modi fuga perspiciatis optio similique sequi!</p>
@@ -60,11 +90,9 @@
         </aside>
         
     </main>
-    
     <footer>
-        <p>Blog: Mi Iphone 2024 | Author: Guevara Diego</p>
+        <p>Blog: Mi iPhone 2024 | Author: Guevara Diego</p>
     </footer>
-    
     <script src="script.js"></script>
 </body>
 </html>
