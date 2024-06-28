@@ -1,102 +1,194 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap");
+
 * {
-  box-sizing: border-box;
   margin: 0;
   padding: 0;
+  box-sizing: border-box;
+  font-family: "Montserrat Alternates", sans-serif;
 }
 
 body {
+  /* background-size: 100vw 100vh; */
+  background-repeat: no-repeat;
+  background: rgb(198, 186, 186);
   display: flex;
   flex-direction: column;
   align-items: center;
-  font-family: Arial, sans-serif;
-  background-color: #f4f4f4;
   min-height: 100dvh;
 }
 
-header {
+.capa {
+  position: fixed;
   width: 100%;
-  background-color: #333;
-  color: white;
-  padding: 10px 0;
-  text-align: center;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
-  font-size: 20px;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.6);
+  z-index: -1;
+  top: 0;
+  left: 0;
 }
 
-header h1 {
-  margin-left: 20px;
-  flex: 1;
-  text-align: left;
-}
-
-header nav {
-  margin-right: 20px;
-}
-
-header nav ul {
-  list-style: none;
-  display: flex;
-  gap: 20px;
-}
-
-header nav ul li a {
-  color: white;
-  text-decoration: none;
-}
-
-header nav ul li a:hover {
-  text-decoration: underline;
-}
-/* texto tamaño */
-nav ul li a{
-  font-size: 25px;
-}
-
-.menu-toggle {
-  background: none;
-  border: none;
-  color: white;
-  font-size: 20px;
-  cursor: pointer;
-  display: none;
-}
-
-.content {
+/* Estilos para el encabezado */
+.header {
   width: 100%;
-  flex: 1;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  padding: 20px;
-}
-
-.container,
-.container2 {
-  width: 90%;
-  max-width: 1200px;
-  margin-bottom: 20px;
-  align-self: stretch;
+  height: 100px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.7); /* Mejor visibilidad del texto */
 }
 
 .container {
+  width: 90%;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.container .btn-menu,
+.logo {
+  float: left;
+  line-height: 100px;
+}
+
+.container .btn-menu label {
+  color: #fff;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.logo h1 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 22px;
+  margin-left: 10px;
+}
+
+.container .menu ul li {
+  list-style: none;
+  float: right;
+  line-height: 100px;
+}
+
+.container .menu a {
+  display: inline-block;
+  padding: 15px;
+  line-height: normal;
+  text-decoration: none;
+  color: #fff;
+  transition: all 0.3s ease;
+  border-bottom: 2px solid transparent;
+  font-size: 15px;
+  margin-right: 5px;
+}
+
+.container .menu a:hover {
+  border-bottom: 2px solid #c7c7c7;
+  padding-bottom: 5px;
+}
+
+/* Fin de Estilos para el encabezado */
+
+/* Menú lateral */
+#btn-menu {
+  display: none;
+}
+
+.container-menu {
+  position: fixed;
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+  top: 0;
+  left: 0;
+  transition: all 500ms ease;
+  opacity: 0;
+  visibility: hidden;
+}
+
+#btn-menu:checked ~ .container-menu {
+  opacity: 1;
+  visibility: visible;
+}
+
+.cont-menu {
+  width: 100%;
+  max-width: 250px;
+  background: #1c1c1c;
+  height: 100vh;
+  position: relative;
+  transition: all 500ms ease;
+  transform: translateX(-100%);
+}
+
+#btn-menu:checked ~ .container-menu .cont-menu {
+  transform: translateX(0%);
+}
+
+.cont-menu nav {
+  transform: translateY(15%);
+}
+
+.cont-menu nav ul {
+  list-style: none;
+}
+
+.cont-menu nav a {
+  display: block;
+  text-decoration: none;
+  padding: 20px;
+  color: #c7c7c7;
+  border-left: 5px solid transparent;
+  transition: all 400ms ease;
+}
+
+.cont-menu nav a:hover {
+  border-left: 5px solid #c7c7c7;
+  background: #1f1f1f;
+}
+
+.cont-menu label {
+  position: absolute;
+  right: 5px;
+  top: 10px;
+  color: #fff;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* Fin de Menú lateral */
+/* ---------------menu------------------------- */
+.content {
+  width: 96%;
+  flex: 1;
+  display: flex;
+  flex-direction: 1fr 1fr;
+  align-items: center;
+  gap: 20px;
+}
+.container3,
+.container4 {
+  width: 90%;
+  max-width: 1200px;
+  margin-bottom: 20px;
+  margin-top: 105px;
+  align-self: stretch;
+}
+
+.container3 {
   border: 1px solid;
   border-radius: 15px;
   background-color: rgb(201, 223, 240);
-  padding: 10px;
+  padding: 20px;
 }
-
 .img {
   border-radius: 15px;
   text-align: center;
 }
 
 .img img {
-  max-width: 100%;
+  max-width: 70%;
   height: auto;
   border-radius: 15px;
+  margin-top: 40px;
 }
 
 p {
@@ -104,19 +196,18 @@ p {
   margin: 15px 0;
 }
 
-.container2 {
+.container4 {
   border: 1px solid;
   display: grid;
   grid-template-rows: auto auto auto;
   gap: 10px;
   border-radius: 15px;
-  padding: 10px;
+  padding: 20px;
   background-color: rgb(201, 223, 240);
 }
-h2{
+h2 {
   padding: 10px;
 }
-
 .item-1,
 .item-2,
 .item-3 {
@@ -124,32 +215,26 @@ h2{
   padding: 15px;
   border-radius: 15px;
   background: #e8eff5;
-  margin: 15px 0;
+  margin: 5px 0;
 }
-
 .item-1 {
   display: flex;
   flex-direction: column;
   gap: 10px;
 }
-
 .item-2 {
   display: flex;
   flex-direction: column;
   gap: 10px;
   padding: 30px;
 }
-
 .item-3 {
   display: flex;
-  flex-direction: column;
-  gap: 10px;
+  flex-direction: 1fr 1fr 1fr;
+  gap: 5px;
   text-align: center;
 }
-
 button {
-  width: 100%;
-  padding: 10px;
   border: none;
   border-radius: 10px;
   background-color: #0f2741;
@@ -158,41 +243,32 @@ button {
   cursor: pointer;
   display: flex;
   align-items: center;
-  justify-content: center;
-  gap: 5px;
 }
 /* edita ambos botones */
 aside button {
-  width: 85%;
-  height: 50%; /* a */
-  padding: 20px;
-  margin: 30px;/* a */
+  width: 100%;
+  height: 50%;
+  margin: 30px 10px;
   border: none;
   border-radius: 10px;
   background-color: #0f2741;
   color: white;
-  font-size: 20px;
+  font-size: 15px;
   cursor: pointer;
   display: flex;
-  align-items: center;
   justify-content: center;
-  gap: 5px;
+  gap: 10px;
 }
-
-/* button i {
-  margin-right: 5px;
-} */
-
 button:hover {
   background-color: #5e6266;
 }
-
 footer {
   text-align: center;
   font-size: 14px;
-  color: #777;
+  /* color: #777; */
+  color: #f7eded;
   width: 100%;
-  background-color: #f4f4f4;
+  /* background-color: #f4f4f4; */
   padding: 10px 0;
   flex-shrink: 0;
 }
@@ -201,136 +277,64 @@ footer {
   bottom: 20px;
   right: 20px;
 }
-
-@media (min-width: 768px) {
-  .content {
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start;
-  }
-
-  .container {
-    width: 40%;
-    margin-right: 2%;
-  }
-
-  .container2 {
-    width: 58%;
-    display: grid;
-    grid-template-rows: 1fr 3fr 1fr;
-    gap: 10px;
-  }
-
-  .item-3 {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  button {
-    width: 48%;
-  }
-
-  .menu-toggle {
-    display: none;
-  }
-
-  header nav {
-    display: block;
-    margin-right: 20px;
-  }
-
-  header nav ul {
-    display: flex;
-    gap: 20px;
-  }
-}
+/* ------------------header pantallas pequeñas---------------------- */
 
 @media (max-width: 768px) {
-  header {
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    padding: 10px 20px;
-  }
-
-  header h1 {
-    text-align: center;
-    margin: 10px 0;
-    font-size: 25px;
-  }
-
-  .menu-toggle {
+  .btn-menu {
     display: block;
-    font-size: 20px;
-    width: 10%;
   }
 
-  header nav {
+  .menu {
     display: none;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    background-color: #333;
   }
 
-  header nav.active {
-    display: flex;
+  .container2 {
+    grid-template-columns: 1fr;
+  }
+}
+/* --------------------main pantallas pequeñas----------------------- */
+
+@media (max-width: 768px) {
+  .btn-menu {
+    display: block;
   }
 
-  header nav ul {
-    flex-direction: column;
-    align-items: center;
-    gap: 10px;
+  .menu {
+    display: none;
   }
 
   .content {
-    padding: 10px;
-  }
-
-  .container,
-  .container2 {
-    width: 100%;
-  }
-
-  .img img {
-    width: 90%;
-    padding: 10px;
-    border-radius: 25px;
-  }
-}
-
-@media (max-width: 480px) {
-  header {
-    flex-direction: row;
-    justify-content: space-between;
-  }
-
-  header nav ul {
     flex-direction: column;
-    gap: 10px;
+    align-items: center;
+    margin-top: 90px;
   }
 
-  .item-2 {
-    padding: 30px;
+  .container3,
+  .container4 {
+    width: 100%;
+    margin-top: 5px;
+  }
+
+  .container4 {
+    grid-template-rows: auto;
   }
 
   .item-3 {
-    padding: 15px;
+    flex-direction: column;
   }
-
+  section img {
+    padding: 5px 30px;
+  }
   button {
     font-size: 15px;
   }
-  /* agrego */
   aside button{
     justify-content: center;
     padding: 25px;
-    margin: 10px;
+    margin: 10px 1px;
     font-size: medium;
-  }
-
-  .img img {
-    width: 85%;
+    width: 100%;
+    height: 10%;
   }
 }
 /* ----agrega loader span---- */
@@ -341,14 +345,17 @@ footer {
   width: 48px;
   height: 48px;
   color: #fff;
+
 }
 .loader:before,
 .loader:after {
   content: "";
   display: block;
   position: absolute;
-  top: 0;
-  left: 0;
+ /*  top: 0;
+  left: 0; */
+  margin: 20px;
+  margin-left: 250px;
   width: inherit;
   height: inherit;
   border-radius: 50%;
