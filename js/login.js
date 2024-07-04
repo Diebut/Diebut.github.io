@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
         } else {
             errorMessage.style.display = 'none';
             // Aquí puedes redirigir al usuario a otra página
-            window.location.href = 'formulario.html';
+            window.location.href = 'blog.html';
         }
     });
 });
