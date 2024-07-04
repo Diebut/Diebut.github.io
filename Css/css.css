@@ -164,6 +164,9 @@ body {
   flex-direction: 1fr 1fr;
   align-items: center;
   gap: 20px;
+ /*  position: sticky;
+  top: 0;
+  z-index: 100; */
 }
 .container3,
 .container4 {
