@@ -80,13 +80,19 @@
                     <i class="fas fa-eye toggle-password" onclick="togglePasswordVisibility('confirm_password')"></i>
                 </div>
                 
-                <label for="accept_terms">
-                    <input type="checkbox" id="accept_terms" name="accept_terms" required>
-                    Acepto los <a href="terms.html"> términos y condiciones</a>
-                </label>
+                <!-- grupo Terminos y Condiciones -->
+                <div class="formulario_grupo" id="grupo_terminos">
+                    <label for="formulario_label">
+                        <input class="formulario_checkbox" type="checkbox" name="accept_terms" id="accept_terms" required>
+                        Acepto los<a href="terms.html"> Terminos y Condiciones</a>
+                    </label>
+                </div>
                 
-                <button type="submit">Registrar</button>
-                <p id="error-message" style="color: red; display: none;"></p>
+                <div class="formulario_grupo formulario_btn_enviar">
+                    <button type="submit" class="formulario_btn">Enviar</button>
+                    <p class="error_message" id="error-message" style="color: red; display: none;"></p>
+                </div>
+
             </form>
         </section>
     </main>

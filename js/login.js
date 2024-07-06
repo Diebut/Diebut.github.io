@@ -9,7 +9,7 @@ document.addEventListener('DOMContentLoaded', function() {
         event.preventDefault();
         
         const email = document.getElementById('email').value.trim();
-        const password = document.getElementById('password').value.trim();
+        const password = document.getElementById('password').value;
         const errorMessage = document.getElementById('error-message');
 
         const storedEmail = localStorage.getItem('userEmail');
