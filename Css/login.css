@@ -86,3 +86,9 @@ a:hover {
     margin-top: 1em;
 }
 
+@media(max-width: 768px){
+    form{
+        grid-template-columns: 1fr;
+    }
+}
+
