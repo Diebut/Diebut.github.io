@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap");
+
 body {
   /* font-family: Arial, sans-serif; */
   font-family: "Montserrat Alternates", sans-serif;
@@ -72,6 +73,9 @@ small {
 .pais {
   width: 100%;
 }
+.terminos_text {
+    font-size:medium;
+  }
 
 .formulario_btn {
   height: 45px;
@@ -123,19 +127,6 @@ a:hover {
   grid-column: span 2;
 }
 
-@media (max-width: 768px) {
-  form {
-    grid-template-columns: 1fr;
-  }
-  .password-group input {
-    width: 95%;
-  }
-
-  .formulario_btn {
-    width: 100%;
-  }
-}
-
 /* efecto normal*/
 .loader {
     width: 10px;
@@ -170,7 +161,18 @@ a:hover {
       transform: rotate(360deg);
     }
 }
-  
+
+@media (max-width: 768px) {
+  form {
+    grid-template-columns: 1fr;
+  }
+  .password-group input {
+    width: 95%;
+  }
+
+  .formulario_btn {
+    width: 100%;
+  }  
 
 @media (min-width: 450px) {
   main {
@@ -227,4 +229,5 @@ a:hover {
       }
     }
   }
+}
 }
