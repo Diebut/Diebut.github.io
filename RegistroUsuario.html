@@ -18,7 +18,7 @@
         <h1>Registro Usuario</h1>
     </header>
     <main>
-        <form id="registerForm">
+        <form id="registerForm" method="post">
             <fieldset>
                 <legend>Información Personal</legend>
                 <label for="nombre"><i class="fas fa-user"></i> Nombre:</label>
@@ -73,15 +73,10 @@
             </fieldset>
             <fieldset>
                 <legend>Términos y Condiciones</legend>
-                <!-- <label class="terminos_text" for="accept_terms">
-                    <input type="checkbox" id="accept_terms" name="accept_terms" required>
-                    Acepto los <a href="terms.html">Términos y Condiciones</a>
-                </label> -->
                 <label class="checkbox-container">
                     <input type="checkbox" id="accept_terms" name="accept_terms" required>
                     <span></span> Acepto los <a href="terms.html">Términos y Condiciones</a>
                 </label>
-
             </fieldset>
             <button type="submit" class="formulario_btn">Enviar</button>
             <p id="error-message" style="color: red; display: none;"></p>
