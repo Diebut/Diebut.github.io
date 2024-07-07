@@ -4,7 +4,7 @@ body {
     padding: 0;
     display: flex;
     flex-direction: column;
-    min-height: 100vh;
+    min-height: 100dvh;
     background: #e5e5e5;
 }
 
@@ -26,17 +26,15 @@ form {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
+    font-size: 20px;
 }
 
 .form-group {
     position: relative;
 }
 
-label {
-    margin-top: 1em;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+label i {
+    margin-right: 0.5em;
 }
 
 label i {
@@ -98,7 +96,7 @@ a:hover {
 #error-message {
     margin-top: 1em;
 }
-/* agrega */
+
 .formulario_grupo,
 .formulario_btn_enviar{
     grid-column: span 2; /* que abarque 2 columnas */

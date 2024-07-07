@@ -23,8 +23,8 @@ document.addEventListener('DOMContentLoaded', function() {
             errorMessage.style.display = 'block';
         } else {
             errorMessage.style.display = 'none';
-            // Aquí puedes redirigir al usuario a otra página
             window.location.href = 'blog.html';
         }
     });
 });
+
