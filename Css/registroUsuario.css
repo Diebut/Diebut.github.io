@@ -73,9 +73,15 @@ small {
 .pais {
   width: 100%;
 }
-.terminos_text {
-    font-size:medium;
-  }
+.terminos_text{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+input[type="checkbox"] {
+    transform: scale(1.5); /* Aumenta el tamaño del checkbox */
+    margin-right: 10px; /* Espacio entre el checkbox y el texto */
+}
 
 .formulario_btn {
   height: 45px;
