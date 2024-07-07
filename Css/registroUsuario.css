@@ -1,5 +1,7 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Montserrat+Alternates|Poppins&display=swap");
 body {
-    font-family: Arial, sans-serif;
+    /* font-family: Arial, sans-serif; */
+    font-family: "Montserrat Alternates", sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
@@ -30,7 +32,7 @@ form {
 }
 
 fieldset {
-    border: none;
+    border: 1px solid;
     margin-bottom: 1em;
     grid-column: span 2;
 }
@@ -44,7 +46,7 @@ label {
     display: flex;
     align-items: center;
     cursor: pointer;
-    margin-bottom: 0.5em;
+    margin-bottom: 0.1em;
 }
 
 label i {
@@ -61,6 +63,9 @@ input[type="text"], input[type="email"], input[type="tel"], input[type="password
 small {
     font-size: 0.8em;
     color: #666;
+}
+.pais{
+    width: 100%;
 }
 
 .formulario_btn {
@@ -93,16 +98,19 @@ a:hover {
     position: relative;
 }
 
-.password-group input {
-    width: 100%;
+.password-group input{
+    width: 97%;
 }
 
 .password-group .toggle-password {
     position: absolute;
     right: 10px;
-    top: 50%;
+    top: 45%;
     transform: translateY(-50%);
     cursor: pointer;
+}
+#accept_terms{
+    margin: 10px;
 }
 
 #error-message {
@@ -114,8 +122,46 @@ a:hover {
     form {
         grid-template-columns: 1fr;
     }
+    .password-group input {
+        width: 95%;
+    }
 
     .formulario_btn {
         width: 100%;
     }
 }
+
+/* efecto */
+.loader {
+    width: 10px;
+    height: 10px;
+    display: flex;
+    position: relative;
+    left: 60px;
+    top: 20px;
+  }
+  .loader::after,
+  .loader::before {
+    content: '';
+    width: 48px;
+    height: 48px;
+    border: 2px solid #FFF;
+    position: absolute;
+    left: 0;
+    top: 0;
+    box-sizing: border-box;
+    animation: rotation 2s ease-in-out infinite;
+  }
+  .loader::after {
+    border-color: #FF3D00;
+    animation-delay: 1s;
+  }
+  
+  @keyframes rotation {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  } 

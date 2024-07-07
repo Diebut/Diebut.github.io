@@ -14,6 +14,7 @@
 </head>
 <body>
     <header>
+        <span class="loader"></span>
         <h1>Registro Usuario</h1>
     </header>
     <main>
@@ -21,17 +22,17 @@
             <fieldset>
                 <legend>Información Personal</legend>
                 <label for="nombre"><i class="fas fa-user"></i> Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
+                <input type="text" id="nombre" name="nombre" placeholder="Diego Web" required>
                 
                 <label for="email"><i class="fas fa-envelope"></i> Correo Electrónico:</label>
-                <input type="email" id="email" name="email" required>
+                <input type="email" id="email" name="email" placeholder="correo@correo.com" required>
                 
                 <label for="contacto"><i class="fas fa-phone"></i> Número de Contacto:</label>
                 <input type="tel" id="contacto" name="contacto" pattern="[0-9]{10}" required>
-                <small>Formato: 1234567890</small>
+                <small>Formato: 3515123456</small>
                 
                 <label for="pais"><i class="fas fa-globe"></i> País:</label>
-                <select id="pais" name="pais" required>
+                <select class="pais" id="pais" name="pais" required>
                     <option value="">Selecciona tu país</option>
                     <option value="Argentina">Argentina</option>
                     <option value="Bolivia">Bolivia</option>
@@ -60,13 +61,13 @@
                 <legend>Seguridad</legend>
                 <label for="password"><i class="fas fa-lock"></i> Contraseña:</label>
                 <div class="password-group">
-                    <input type="password" id="password" name="password" required>
+                    <input type="password" id="password" name="password" minlength="3" maxlength="8" required>
                     <i class="fas fa-eye toggle-password" onclick="togglePasswordVisibility('password')"></i>
                 </div>
                 
                 <label for="confirm_password"><i class="fas fa-lock"></i> Confirmar Contraseña:</label>
                 <div class="password-group">
-                    <input type="password" id="confirm_password" name="confirm_password" required>
+                    <input type="password" id="confirm_password" name="confirm_password" minlength="3" maxlength="8" required>
                     <i class="fas fa-eye toggle-password" onclick="togglePasswordVisibility('confirm_password')"></i>
                 </div>
             </fieldset>
@@ -81,6 +82,9 @@
             <p id="error-message" style="color: red; display: none;"></p>
         </form>
     </main>
+    <footer>
+        <p>Blog: Mi iPhone 2024 | Author: Guevara Diego</p>
+    </footer>
     <script src="Js/registroCliente.js"></script>
 </body>
 </html>
