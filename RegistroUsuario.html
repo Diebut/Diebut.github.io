@@ -73,10 +73,15 @@
             </fieldset>
             <fieldset>
                 <legend>Términos y Condiciones</legend>
-                <label class="terminos_text" for="accept_terms">
+                <!-- <label class="terminos_text" for="accept_terms">
                     <input type="checkbox" id="accept_terms" name="accept_terms" required>
                     Acepto los <a href="terms.html">Términos y Condiciones</a>
+                </label> -->
+                <label class="checkbox-container">
+                    <input type="checkbox" id="accept_terms" name="accept_terms" required>
+                    <span></span> Acepto los <a href="terms.html">Términos y Condiciones</a>
                 </label>
+
             </fieldset>
             <button type="submit" class="formulario_btn">Enviar</button>
             <p id="error-message" style="color: red; display: none;"></p>
