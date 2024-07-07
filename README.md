@@ -1,10 +1,10 @@
-# 🌟 Mi Página Web de iPhone 🌟
+# 🌟 Mi Blog Web de iPhone 🌟
 
-¡Hola! Soy **Diego Guevara**. Bienvenido a mi proyecto de una página web dedicada al iPhone.
+¡Hola! Soy **Diego Guevara**. Bienvenido a mi proyecto de un Blog Web dedicada al iPhone.
 
 ## 📜 Descripción
 
-Este proyecto es una página web que presenta el nuevo iPhone con un diseño moderno y funcional. La página es totalmente responsiva y está optimizada para una gran experiencia de usuario en cualquier dispositivo.
+Este proyecto es una página web que presenta el nuevo iPhone (fisticio) con un diseño moderno y funcional. La página es totalmente responsiva y está optimizada para una gran experiencia de usuario en cualquier dispositivo.
 
 ## 🔧 Características
 
