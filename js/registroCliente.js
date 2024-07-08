@@ -8,14 +8,15 @@ document.addEventListener('DOMContentLoaded', function() {
     document.getElementById('registerForm').addEventListener('submit', function(event) {
         event.preventDefault(); // Evita el envío del formulario real
         
-        const nombre = document.getElementById('nombre').value.trim();
-        const email = document.getElementById('email').value.trim();
-        const contacto = document.getElementById('contacto').value.trim();
+        const nombre = document.getElementById('nombre').value;
+        const email = document.getElementById('email').value;
+        const contacto = document.getElementById('contacto').value;
         const pais = document.getElementById('pais').value;
         const password = document.getElementById('password').value;
         const confirmPassword = document.getElementById('confirm_password').value;
         const acceptTerms = document.getElementById('accept_terms').checked;
         const errorMessage = document.getElementById('error-message');
+
 
         let errorMessages = [];
 
