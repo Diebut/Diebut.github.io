@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Diplomatura Full Stack, especializado en programación">
+    <meta name="keywords" content="Blog web Iphone, desarrollador web, programador">
+    <meta name="author" content="Guevara Diego">
+    <title>Login</title>
+    <link rel="stylesheet" href="Css/normalize.css">
+    <link rel="stylesheet" href="Css/index.css">
+    <link rel="icon" href="Assets/DG.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"> 
+    
+</head>
+<body>
+    <header>
+        <!--   <span class="loader"></span> -->
+        <h1>Iniciar Sesión</h1>
+    </header>
+    <section>
+        <legend class="legend1">Información de la Cuenta</legend>
+        <form id="loginForm">
+            <label><i class="fas fa-envelope"></i> E-mail</label>
+            <input type="email" placeholder="..." id="email" required autofocus>
+            <label><i class="fas fa-lock"></i> Contraseña</label>
+            <input type="password" placeholder="..." id="password" required>
+            <i class="fas fa-eye toggle-password" onclick="togglePasswordVisibility('password')"></i>
+            <button type="submit" class="formulario_btn">Iniciar Sesión</button>
+        </form>
+        <p>No tienes una cuenta? <a href="registro.html">Registro</a></p>
+    </section>
+    <footer>
+        <p>Blog: Mi iPhone 2024 | Author: Guevara Diego</p>
+    </footer>
+    <script src="Js/index.js"></script>
+</body>
+</html>
