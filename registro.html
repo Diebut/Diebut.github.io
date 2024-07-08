@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="description" content="Diplomatura Full Stack, especializado en programación">
+    <meta name="keywords" content="Blog web Iphone, desarrollador web, programador">
+    <meta name="author" content="Guevara Diego">
+    <title>Registro</title>
+    <link rel="stylesheet" href="Css/normalize.css">
+    <link rel="icon" href="Assets/DG.png">
+    <link rel="stylesheet" href="Css/loginRegistro.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <h1>Registro Usuario</h1>
+    </header>
+    <section>
+        <legend class="legend1">Información Personal</legend>
+        <form id="registroForm">
+            <label><i class="fas fa-user"></i> Nombre:</label>
+            <input type="text" placeholder="..." id="name" required autofocus>
+            <label><i class="fas fa-envelope"></i> E-mail:</label>
+            <input type="email" placeholder="..." id="email" required>
+            <label><i class="fas fa-phone"></i> Contacto:</label>
+            <input type="tel" placeholder="..." id="tel" pattern="[0-9]{10}" required>
+            <small>Formato: 3515123456</small>
+            <label><i class="fas fa-globe"></i> País:</label>
+            <select class="pais" id="pais" required>
+                <option value="">Selecciona tu país</option>
+                    <option value="Argentina">Argentina</option>
+                    <option value="Bolivia">Bolivia</option>
+                    <option value="Brasil">Brasil</option>
+                    <option value="Chile">Chile</option>
+                    <option value="Colombia">Colombia</option>
+                    <option value="Costa Rica">Costa Rica</option>
+                    <option value="Cuba">Cuba</option>
+                    <option value="Ecuador">Ecuador</option>
+                    <option value="El Salvador">El Salvador</option>
+                    <option value="España">España</option>
+                    <option value="Guatemala">Guatemala</option>
+                    <option value="Honduras">Honduras</option>
+                    <option value="México">México</option>
+                    <option value="Nicaragua">Nicaragua</option>
+                    <option value="Panamá">Panamá</option>
+                    <option value="Paraguay">Paraguay</option>
+                    <option value="Perú">Perú</option>
+                    <option value="Puerto Rico">Puerto Rico</option>
+                    <option value="República Dominicana">República Dominicana</option>
+                    <option value="Uruguay">Uruguay</option>
+                    <option value="Venezuela">Venezuela</option>
+            </select>
+            <label><i class="fas fa-lock"></i> Contraseña:</label>
+            <div class="password-container">
+                <input type="password" placeholder="..." id="password" required>
+                <i class="fas fa-eye toggle-password" onclick="togglePasswordVisibility('password')"></i>
+            </div>
+            <legend class="legend2">Términos y Condiciones</legend>
+            <div class="terms-container">
+                <input type="checkbox" id="accept_terms" required>
+                <span>Acepto los <a href="terms.html">Términos y Condiciones</a></span>
+            </div>
+            <button type="submit" class="formulario_btn">Enviar</button>
+        </form>
+        <p>Ya tienes una cuenta? <a href="index.html">Login</a></p>
+    </section>
+    <footer>
+        <p>Blog: Mi iPhone 2024 | Author: Guevara Diego</p>
+    </footer>
+    <script src="Js/registro.js"></script>
+</body>
+</html>
