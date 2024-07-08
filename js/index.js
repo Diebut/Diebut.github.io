@@ -19,5 +19,5 @@ document.querySelector("#loginForm").addEventListener("submit", (e) => {
 
   alert(`Bienvenido ${validUser.name}`);
   localStorage.setItem("login_success", JSON.stringify(validUser));
-  window.location.href = "paginaWEB.html";
+  window.location.href = "blog.html";
 });
