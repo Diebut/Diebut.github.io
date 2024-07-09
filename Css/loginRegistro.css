@@ -18,7 +18,7 @@ body {
 section {
     display: flex;
     flex-wrap: wrap;
-    height: 100dvh;
+    height: 130dvh; /* altura ocupa el contenedor */
     align-items: center;
     justify-content: center;
     flex-direction: column;
@@ -37,7 +37,7 @@ section h2 {
 }
 
 section form {
-    padding: 1.5em;
+    padding: 1.5em 1.5em 0em 1.5em;
     display: flex;
     flex-wrap: wrap;
     max-width: 500px;
@@ -88,10 +88,21 @@ section p a {
     text-decoration: none;
     color: #003DFF;
 }
+small {
+    font-size: 0.8em;
+    color: #666;
+}
 
-/* .legend1{
-    
-} */
+.legend1{
+    /* margin: 50px; */
+    margin-bottom: 50px;
+    font-size: 30px;
+}
+
+.legend2{
+    margin: 10px 100px;
+    font-size: 18px;
+}
 .password-container {
     position: relative;
     width: 100%;
@@ -99,20 +110,70 @@ section p a {
 
 .toggle-password {
     position: absolute;
-    right: 50%;
-    top: 80%;
+    right: 5%;
+    top: 38%;
     transform: translateY(-50%);
     cursor: pointer;
 }
 
-.terms-container {
+.checkbox-container a{
+    display: flex;
     align-items: center;
-    margin-bottom: 1em;
-    display: inline;
+    font-size: 18px;
+    margin: 8px 10px 8px 10px;
 }
 
-.terms-container input[type="checkbox"] {
-    margin-right: 0.5em;
+/* Ocultar el checkbox original */
+input[type="checkbox"] {
+    position: absolute;
+    opacity: 0;
+    cursor: pointer;
+    height: 0;
+    width: 0;
+}
+
+/* Estilo del nuevo checkbox */
+.checkbox-container {
+    display: flex;
+    align-items: center;
+    font-size: 18px;
+    cursor: pointer;
+    user-select: none;
+}
+
+/* Estilo del elemento que reemplaza al checkbox */
+.checkbox-container input[type="checkbox"] + span {
+    position: relative;
+    height: 20px;
+    width: 20px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    margin-right: 10px;
+}
+
+/* Cambiar el estilo al estar marcado */
+.checkbox-container input[type="checkbox"]:checked + span {
+    background-color: #2196F3;
+}
+
+/* Estilo del "check" */
+.checkbox-container input[type="checkbox"]:checked + span::after {
+    content: "";
+    position: absolute;
+    left: 7px;
+    top: 3px;
+    width: 5px;
+    height: 10px;
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    transform: rotate(45deg);
+}
+button{
+    margin: 100px 100px 20px;
+}
+section p{
+    margin-top: 25px;
+    font-size: 20px;
 }
 
 header, footer {
@@ -122,7 +183,57 @@ header, footer {
     padding: 1em;
 }
 
-small {
-    font-size: 0.8em;
-    color: #666;
+@media (max-width: 600px) {
+    section {
+        padding: 0.5em;
+    }
+
+    section form {
+        padding: 1em;
+        width: 100%;
+        max-width: none;
+        border: none;
+    }
+
+    .toggle-password {
+        right: 10%;
+    }
+
+    section h1 {
+        font-size: 2em;
+    }
 }
+
+/* Responsive styles */
+/* @media (max-width: 768px) {
+    section h1 {
+        font-size: 2.5em;
+    }
+
+    section h2 {
+        font-size: 2em;
+    }
+
+    section form {
+        padding: 1em;
+        max-width: 90%;
+    }
+
+    section form label,
+    section form input,
+    section form select,
+    section form button,
+    section form .toggle-password {
+        width: 100%;
+        margin-bottom: 1em;
+    }
+
+    .toggle-password {
+        right: 10%;
+        top: 50%;
+    }
+
+    section p {
+        font-size: 1em;
+    }
+} */
