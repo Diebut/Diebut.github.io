@@ -9,8 +9,9 @@ document.querySelector("#registroForm").addEventListener("submit", (e) => {
   const name = document.querySelector("#name").value;
   const email = document.querySelector("#email").value;
   const contacto = document.querySelector("#tel").value;/* agrega */
-  const pais = document.querySelector("#pais").select;
+  const pais = document.querySelector("#pais").select; /* agrego */
   const password = document.querySelector("#password").value;
+  const check = document.querySelector("#checkbox").Checked; /* agrego */
   const Users = JSON.parse(localStorage.getItem("users")) || [];
   const isUserRegistered = Users.find((user) => user.email === email);
 
@@ -18,7 +19,7 @@ document.querySelector("#registroForm").addEventListener("submit", (e) => {
     return alert("El usuario ya está registrado!");
   }
 
-  Users.push({ name, email, contacto, pais, password });
+  Users.push({ name, email, contacto, pais, password, check });
   localStorage.setItem("users", JSON.stringify(Users));
   alert("Registro Exitoso!");
   window.location.href = "index.html";
