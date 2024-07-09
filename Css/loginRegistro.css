@@ -183,7 +183,7 @@ header, footer {
     padding: 1em;
 }
 
-@media (max-width: 600px) {
+/* @media (max-width: 600px) {
     section {
         padding: 0.5em;
         height: 100%;
@@ -229,4 +229,4 @@ header, footer {
     footer{
         font-size: 10px;
     }
-}
+} */
