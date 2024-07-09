@@ -11,7 +11,7 @@ document.querySelector("#registroForm").addEventListener("submit", (e) => {
   const contacto = document.querySelector("#tel").value;/* agrega */
   const pais = document.querySelector("#pais").select; /* agrego */
   const password = document.querySelector("#password").value;
-  const check = document.querySelector("#checkbox").Checked; /* agrego */
+  const check = document.querySelector("#accept_terms").Checked; /* agrego */
   const Users = JSON.parse(localStorage.getItem("users")) || [];
   const isUserRegistered = Users.find((user) => user.email === email);
 
