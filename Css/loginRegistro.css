@@ -186,54 +186,47 @@ header, footer {
 @media (max-width: 600px) {
     section {
         padding: 0.5em;
+        height: 100%;
+    }
+    .legend1{
+        align-items: center;
+        font-size: 20px;
+        display: flex;
+        margin-bottom: 5px;
     }
 
     section form {
         padding: 1em;
-        width: 100%;
+        width: 90%;
         max-width: none;
-        border: none;
+        height: 75%;
     }
-
+    .legend2{
+        display: flex;
+        align-items: center;
+        font-size: 15px;
+        margin: 15px 50px;
+    }
     .toggle-password {
-        right: 10%;
+        right: 7px;
+    }
+    .checkbox-container a{
+        align-items: center;
+        font-size: 13px;
+    }
+    .checkbox-container, input, span, a {
+        font-size: 13px;
+    }
+    
+    section p a{
+        margin-top: 25px;
+        font-size: 20px;
     }
 
     section h1 {
         font-size: 2em;
+    }
+    footer{
+        font-size: 10px;
     }
 }
-
-/* Responsive styles */
-/* @media (max-width: 768px) {
-    section h1 {
-        font-size: 2.5em;
-    }
-
-    section h2 {
-        font-size: 2em;
-    }
-
-    section form {
-        padding: 1em;
-        max-width: 90%;
-    }
-
-    section form label,
-    section form input,
-    section form select,
-    section form button,
-    section form .toggle-password {
-        width: 100%;
-        margin-bottom: 1em;
-    }
-
-    .toggle-password {
-        right: 10%;
-        top: 50%;
-    }
-
-    section p {
-        font-size: 1em;
-    }
-} */
