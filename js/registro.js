@@ -16,7 +16,7 @@ document.querySelector("#registroForm").addEventListener("submit", (e) => {
     return alert("El usuario ya está registrado!");
   }
 
-  Users.push({ name, email, contacto, pais, password, check });
+  Users.push({ name, email, password });
   localStorage.setItem("users", JSON.stringify(Users));
   alert("Registro Exitoso!");
   window.location.href = "index.html";
