@@ -140,7 +140,7 @@ header, footer {
     padding: 1em;
 } 
 
-@media (max-width: 600px) {
+@media (max-width: 400px) {
     section {
         padding: 0.5em;
         height: 85dvh;
@@ -159,13 +159,13 @@ header, footer {
         padding: 1em;
         width: 90%;
         max-width: none;
-        margin-bottom: 50%;
+        /* margin-bottom: 50%; */
         /* background-color:#003DFF ; */
     }
 
     .toggle-password {
-        right: 15%;
-        top: 53%;
+        right: 13%;
+        top: 69%;
     }
 
     section h1 {
