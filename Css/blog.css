@@ -339,42 +339,6 @@ footer {
 }
 
 
-/* @media (min-width: 400px) {
-
-  .btn-menu {
-    display: block;
-  }
-
-  .menu {
-    display: none;
-  }
-
-  .content {
-    align-items: center;
-    margin-top: 90px;
-  }
-
-  .container3,
-  .container4 {
-    flex-direction: column;
-    width: 100%;
-    margin-top: 5px;
-  }
-
-  .container4 {
-    grid-template-rows: auto;
-  }
-
-  .item-3 {
-    flex-direction: column;
-  }
-  section img {
-    padding: 5px 30px;
-  }
-
-} */
-
-
 /* ----agrega loader span---- */
 .loader {
   transform: rotateZ(45deg);
