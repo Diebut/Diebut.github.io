@@ -281,24 +281,9 @@ footer {
   bottom: 20px;
   right: 20px;
 }
-/* ------------------header pantallas pequeñas---------------------- */
 
-@media (max-width: 768px) {
-  .btn-menu {
-    display: block;
-  }
-
-  .menu {
-    display: none;
-  }
-
-  .container2 {
-    grid-template-columns: 1fr;
-  }
-}
 /* --------------------main pantallas pequeñas----------------------- */
-
-@media (max-width: 768px) {
+@media (max-width: 400px) {
   .btn-menu {
     display: block;
   }
@@ -308,13 +293,71 @@ footer {
   }
 
   .content {
+    grid-template-columns: 1fr;
     flex-direction: column;
+    margin-top: 30px;
+    width: 90%;
+    display: flex;
+    height: 80%;
+  }
+
+  .container3,
+  .container4 {
+    grid-template-columns: 1fr;
+    display: flex;
+    width: 100%;
+    flex-direction: column;
+    margin-bottom: .1rem;
+  }
+
+  .item-3 {
+    flex-direction: column;
+  }
+
+  .img img {
+    padding: 5px 5px;
+    border-radius: 10px;
+    margin: 5px;
+  }
+
+  button {
+    font-size: 15px;
+  }
+  aside button{
+    justify-content: center;
+    padding: 25px;
+    margin: 10px 1px;
+    font-size: medium;
+    width: 100%;
+    height: 10%;
+  }
+
+  .whatsapp-icon {
+    position: static;
+    margin-top: 20px;
+  }
+}
+
+
+
+/* @media (min-width: 400px) {
+
+  .btn-menu {
+    display: block;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  .content {
     align-items: center;
     margin-top: 90px;
   }
 
   .container3,
   .container4 {
+    flex-direction: column;
     width: 100%;
     margin-top: 5px;
   }
@@ -329,18 +372,10 @@ footer {
   section img {
     padding: 5px 30px;
   }
-  button {
-    font-size: 15px;
-  }
-  aside button{
-    justify-content: center;
-    padding: 25px;
-    margin: 10px 1px;
-    font-size: medium;
-    width: 100%;
-    height: 10%;
-  }
-}
+
+} */
+
+
 /* ----agrega loader span---- */
 .loader {
   transform: rotateZ(45deg);
