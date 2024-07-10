@@ -283,7 +283,7 @@ footer {
 }
 
 /* --------------------main pantallas pequeñas----------------------- */
-@media (max-width: 400px) {
+@media (max-width: 600px) {
   .btn-menu {
     display: block;
   }
@@ -337,7 +337,6 @@ footer {
     margin-top: 20px;
   }
 }
-
 
 
 /* @media (min-width: 400px) {
