@@ -144,23 +144,28 @@ header, footer {
     section {
         padding: 0.5em;
         height: 85dvh;
+        /* background-color: #91ff00; */
     }
     .legend1{
         align-items: center;
         font-size: 20px;
+        /* font-weight: bold; */
         display: flex;
-        margin-bottom: 5px;
+        padding: 0;
+        /* background-color: aqua; */
     }
 
     section form {
         padding: 1em;
-        width: 100%;
+        width: 90%;
         max-width: none;
+        margin-bottom: 50%;
+        /* background-color:#003DFF ; */
     }
 
     .toggle-password {
-        right: 10%;
-        top: 66%;
+        right: 15%;
+        top: 53%;
     }
 
     section h1 {
@@ -168,10 +173,12 @@ header, footer {
     }
     .formulario_btn {
         width: 100%;
-        margin: 10px 80px 10px 80px;
+        margin: 25px;
+        /* background-color: #91ff00; */
     }
     section p{
         font-size: 15px;
+        margin-bottom: 1%;
     }
     footer{
         font-size: 10px;
