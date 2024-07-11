@@ -126,6 +126,9 @@ small {
 button {
   margin: 140px 140px 20px;
 }
+button:hover{
+  background:#474343;
+}
 
 section p {
   font-family: var(--font-mono);
